@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Business Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 160px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #3498db;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-size: 18px;
+      color: green;
+      display: none;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Local Business</h1>
+    <p>Welcome to our website</p>
+  </header>
+
+  <div class="container">
+    <h2>Our Services</h2>
+    <p>We provide quality service to our customers.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/250x160" alt="photo1">
+      <img src="https://via.placeholder.com/250x160" alt="photo2">
+      <img src="https://via.placeholder.com/250x160" alt="photo3">
+    </div>
+
+    <h2>Contact Us</h2>
+    <button onclick="showMessage()">Click to Contact</button>
+    <p id="message">Call us at: 9876543210</p>
+  </div>
+
+  <footer>
+    <p>© 2026 My Local Business</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
